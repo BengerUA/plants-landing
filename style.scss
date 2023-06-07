@@ -1,0 +1,2747 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  height: 60px;
+  background: #0c4b35;
+}
+.container {
+  margin: 0 auto;
+}
+
+//Mobile screens
+@media (min-width: 320px) and (max-width: 1023px) {
+  .container {
+    max-width: calc(100vw - 25px);
+  }
+  .header-top__bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    .header-nav__connection {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+      }
+      p {
+        display: none;
+        padding-left: 10px;
+        margin-right: 30px;
+        width: 100%;
+        font-size: 14px;
+        color: white;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .header-select__lang {
+      display: flex;
+    }
+    .header-select__lang select {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      option {
+        background-color: #0c4b35;
+        color: white;
+      }
+    }
+  }
+  .nav-menu__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+    background-color: transparent;
+    .main-img {
+      margin: 15px 0 0;
+    }
+    .nav-list__items {
+      display: none;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        li {
+          display: flex;
+          justify-content: space-around;
+          a {
+            color: black;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #00730c;
+          }
+        }
+      }
+    }
+    .menu-nav__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .call-us__btn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 65px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: #00730c;
+        padding: 0 25px;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        p {
+          display: none;
+        }
+      }
+      .menu-burger__btn {
+        display: flex;
+        margin-left: 25px;
+        border: none;
+        background-color: transparent;
+        img {
+          width: 35px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .main {
+    background: url(img/main/bg-main.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    .services-we__provide {
+      background-color: white;
+      .SWP-head__block {
+        padding-top: 50px;
+        h1 {
+          font-size: 28px;
+          text-align: center;
+        }
+        span {
+          color: #00730c;
+        }
+        p {
+          text-align: center;
+        }
+      }
+      .services-list__block {
+        margin-top: 30px;
+      }
+      .services-list li {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 15px;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
+      }
+    }
+    // 1 block TREE PLANTING
+    .tree-planting {
+      padding: 25px;
+      display: flex;
+      .tree-planting__img {
+        background: url(img/tree-planting.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+    .tree-planting__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    // 2 block GRASS CUTTING
+    .grass-cutting {
+      padding: 25px;
+      display: flex;
+      .grass-cutting__img {
+        background: url(img/grass-cutting.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .grass-cutting__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    //3 block GARDEN DESIGN
+    .garden-design {
+      padding: 25px;
+      display: flex;
+      .garden-design__img {
+        background: url(img/Garden-Design.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .garden-design__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    //4 block PLANT GROWING
+    .plant-growing {
+      padding: 25px;
+      display: flex;
+      .plant-growing__img {
+        background: url(img/Plant-Growing.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .plant-growing__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    //5 block FLOWER SCAPING
+    .flower-scaping {
+      padding: 25px;
+      display: flex;
+      .flower-scaping__img {
+        background: url(img/Flower-scaping.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .flower-scaping__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    //6 block BRANCH CUTTING
+    .branch-cutting {
+      padding: 25px;
+      display: flex;
+      .branch-cutting__img {
+        background: url(img/branch-cutting.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .branch-cutting__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    //7 block WEED CONTROL
+    .weed-control {
+      padding: 25px;
+      display: flex;
+      .weed-control__img {
+        background: url(img/pests-weed-controls.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .weed-control__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    //8 block WATERING IRRIGATION
+    .watering-irrigation {
+      padding: 25px;
+      display: flex;
+      .watering-irrigation__img {
+        background: url(img/watering-irrigation.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        img {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .watering-irrigation__text {
+      h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    .main-section__PLS {
+      position: relative;
+      margin-top: 85px;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 112px;
+      .flower-pot {
+        img {
+          position: absolute;
+          width: 197px;
+          height: 278px;
+          bottom: 0;
+          display: none;
+          margin: auto 0 0 0;
+        }
+      }
+      .woman-with__pots {
+        .mobileWoman-holdPots__block {
+          display: none;
+        }
+        .deskWoman-holdPots__block {
+          img {
+            position: relative;
+            width: 100%;
+          }
+        }
+      }
+      .main-PLS__textblock {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        .main-PLS__title {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+          p {
+            font-size: 16px;
+            font-family: Nunito, sans-serif;
+            line-height: 20px;
+            font-weight: 700;
+          }
+        }
+        .main-PLS__subtitle {
+          margin-bottom: 20px;
+          p {
+            font-family: Nunito, sans-serif;
+            font-size: 58px;
+            font-weight: 800;
+            line-height: 80px;
+            span {
+              color: #00730c;
+            }
+          }
+        }
+        .main-PLS__description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          color: #676767;
+          margin-bottom: 50px;
+        }
+        .main-PLS__btn {
+          margin-bottom: 60px;
+          .get-quate__btn {
+            width: 100%;
+            height: 50px;
+            color: white;
+            background-color: #00730c;
+            border: none;
+            border-radius: 5px;
+          }
+          .how-it__works {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-decoration: none;
+            color: #00730c;
+            span {
+              display: flex;
+              justify-content: space-around;
+              color: #00730c;
+              width: 200px;
+            }
+          }
+        }
+        .stat-bubbles__flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .happy-customers {
+            background-image: url(img/main/flowerPot.png);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 120px;
+            span,
+            p {
+              display: none;
+            }
+          }
+          .garden-created {
+            background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+            border-radius: 32px;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-right: 5%;
+          }
+          .team-members {
+            background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+            border-radius: 32px;
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+          }
+        }
+      }
+    }
+    .years-of-expirience {
+      background-color: #ffffff;
+      width: 100%;
+
+      .yoe-main__block {
+        padding-top: 25px;
+        height: 100%;
+        .yoe-palm__img {
+          display: none;
+          position: absolute;
+          width: 232px;
+          height: 349px;
+          left: -55px;
+        }
+        .yoe-img__block {
+          position: relative;
+          height: 462px;
+          width: 100%;
+          margin: 0 auto;
+          .yoe-green-bg__img {
+            position: absolute;
+            height: 293px;
+            width: 188px;
+          }
+          .medshot-manlook__plant {
+            position: absolute;
+            left: 12px;
+            margin-top: 12px;
+            width: 251px;
+            height: 338px;
+          }
+          .closeuphands-holdhouse__plant {
+            position: absolute;
+            left: 50px;
+            width: 241px;
+            height: 152px;
+            top: 240px;
+          }
+        }
+        .yoe-text__block {
+          display: flex;
+          flex-direction: column;
+          .yoe-text__title {
+            margin-bottom: 40px;
+            h1 {
+              font-size: 20px;
+              font-weight: 700;
+              height: 100%;
+              width: 100%;
+              text-align: center;
+              margin-bottom: 15px;
+              span {
+                color: #00730c;
+              }
+            }
+            p {
+              font-family: Poppins, serif;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 22px;
+            }
+          }
+          .yoe-proofs__flex {
+            margin-bottom: 60px;
+            span {
+              font-size: 14px;
+              font-weight: 700;
+            }
+            .yoe-proofs__row {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              margin-bottom: 20px;
+              gap: 30px;
+              .yoe-our__mission {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                height: 94px;
+                background: #ffffff;
+                box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                border-radius: 5px;
+                background: url(img/our-mission.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                text-align: center;
+              }
+              .yoe-our__vision {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                height: 94px;
+                background: #ffffff;
+                box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                border-radius: 5px;
+                background: url(img/our-vision.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                text-align: center;
+              }
+            }
+            .yoe-proofs__row {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              gap: 30px;
+              .yoe-support__team {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                height: 94px;
+                background: #ffffff;
+                box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                border-radius: 5px;
+                background: url(img/support-team.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                text-align: center;
+              }
+              .yoe-clients__trust {
+                display: flex;
+                flex-direction: column-reverse;
+                width: 100%;
+                height: 94px;
+                background: #ffffff;
+                box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+                border-radius: 5px;
+                background: url(img/clients-trust.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                text-align: center;
+              }
+            }
+          }
+          button {
+            min-width: 167px;
+            max-width: 250px;
+            height: 50px;
+            background: #00730c;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            padding: 13px 35px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+    .why_choose-us {
+      width: 100%;
+      height: 100%;
+      background-color: #0c4b35;
+      color: white;
+      padding: 50px 15px;
+      position: relative;
+      overflow: hidden;
+      .wcu-leaf__left {
+        background: url(img/leaf_shadow_left.svg);
+        width: 250px;
+        height: 250px;
+        left: -165px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .wcu-leaf__right {
+        background: url(img/leaf_shadow_right.svg);
+        width: 250px;
+        height: 250px;
+        right: -90px;
+        top: -85px;
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .wcu-main__block {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        .wcu-text__block {
+          h2 {
+            font-weight: 700;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 15px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 40px;
+          }
+          .wcu-reasons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 30px;
+            gap: 12px;
+            span {
+              width: 100%;
+              text-align: left;
+              font-weight: 700;
+              font-size: 12px;
+              padding-left: 10px;
+            }
+            .wcu-row {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              width: 100%;
+              .proper-take__care {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                .ptc-tick {
+                  background: url(img/Tick.svg);
+                  background-size: 75%;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: white;
+                  padding: 5px;
+                }
+              }
+              .expert-farmer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                .ptc-tick {
+                  background: url(img/Tick.svg);
+                  background-size: 75%;
+                  padding: 5px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+            }
+            .wcu-row {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 25px;
+              .clean-working {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                .ptc-tick {
+                  display: inline-block;
+                  background: url(img/Tick.svg);
+                  background-size: 75%;
+                  padding: 5px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+              .home-gardening {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                .ptc-tick {
+                  background: url(img/Tick.svg);
+                  background-size: 75%;
+                  padding: 5px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+            }
+          }
+          .wcu-button {
+            display: flex;
+            width: 167px;
+            height: 40px;
+            background: #00730c;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            margin: 0 auto;
+          }
+        }
+      }
+      .wcu-img__block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: 100%;
+          max-height: 426px;
+          max-width: 672px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .staff-process__block {
+      width: 100%;
+      background-color: white;
+      padding-top: 50px;
+      .working-process__block {
+        .wp-text__block {
+          h2 {
+            font-weight: 700;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 15px;
+            span {
+              color: #00730c;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 30px;
+          }
+        }
+        .wp-cards__block {
+          margin-bottom: 55px;
+          .wp-card__flex {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .wp-card__consultation {
+              padding: 20px;
+              background: #ffffff;
+              box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+              border-radius: 10px;
+              .wp-svg__hover {
+                display: none;
+              }
+              .wp-svg {
+                position: absolute;
+                right: 20px;
+                margin-top: 25px;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                span {
+                  background: url(img/Consultation.png);
+                  width: 50px;
+                  height: 50px;
+                  background-size: contain;
+                  background-position: center;
+                }
+                p {
+                  color: #e3e3e3;
+                  font-weight: 800;
+                  font-size: 45px;
+                  font-family: Nunito, sans-serif;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+            .wp-card__designwork {
+              padding: 20px;
+              background: #ffffff;
+              box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+              border-radius: 10px;
+              .wp-svg__hover {
+                display: none;
+              }
+              .wp-svg {
+                position: absolute;
+                right: 20px;
+                margin-top: 25px;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                span {
+                  background: url(img/DesignWork.png);
+                  width: 50px;
+                  height: 50px;
+                  background-size: contain;
+                  background-position: center;
+                }
+                p {
+                  color: #e3e3e3;
+                  font-weight: 800;
+                  font-size: 45px;
+                  font-family: Nunito, sans-serif;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+            .wp-card__maintenance {
+              padding: 20px;
+              background: #ffffff;
+              box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+              border-radius: 10px;
+              .wp-svg__hover {
+                display: none;
+              }
+              .wp-svg {
+                position: absolute;
+                right: 20px;
+                margin-top: 25px;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                span {
+                  background: url(img/Maintenance.png);
+                  width: 50px;
+                  height: 50px;
+                  background-size: contain;
+                  background-position: center;
+                }
+                p {
+                  color: #e3e3e3;
+                  font-weight: 800;
+                  font-size: 45px;
+                  font-family: Nunito, sans-serif;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+            .wp-card__complete {
+              padding: 20px;
+              background: #ffffff;
+              box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+              border-radius: 10px;
+              .wp-svg__hover {
+                display: none;
+              }
+              .wp-svg {
+                position: absolute;
+                right: 20px;
+                margin-top: 25px;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+                span {
+                  background: url(img/Complete.png);
+                  width: 50px;
+                  height: 50px;
+                  background-size: contain;
+                  background-position: center;
+                }
+                p {
+                  color: #e3e3e3;
+                  font-weight: 800;
+                  font-size: 45px;
+                  font-family: Nunito, sans-serif;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 16px;
+                margin-bottom: 10px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .wp-img__block {
+          position: relative;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          .wp-textbtn__block {
+            position: absolute;
+            padding: 40px 30px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: 0;
+            h2 {
+              color: white;
+              font-weight: 700;
+              font-size: 16px;
+              text-align: center;
+              margin-bottom: 30px;
+              text-shadow: 2px 0 2px black;
+            }
+            .wp-img__btn {
+              display: flex;
+              justify-content: center;
+              width: 167px;
+              height: 40px;
+              background: #00730c;
+              border-radius: 5px;
+              color: white;
+              border: none;
+              padding: 10px 30px;
+              margin: 0 auto;
+              text-align: center;
+            }
+          }
+        }
+      }
+      .trained-staff__block {
+        margin-bottom: 40px;
+        margin-top: 50px;
+        text-align: center;
+        h2 {
+          font-weight: 700;
+          font-size: 28px;
+          margin-bottom: 15px;
+          span {
+            color: #00730c;
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          margin-bottom: 30px;
+        }
+        button {
+          display: flex;
+          width: 167px;
+          height: 40px;
+          background: #00730c;
+          border-radius: 5px;
+          color: white;
+          border: none;
+          padding: 10px 30px;
+          margin: 0 auto;
+        }
+      }
+      .staff-img__block {
+        position: relative;
+        width: 100%;
+        height: 343px;
+        background-image: url(img/doris-jordan.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        button {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background: linear-gradient(
+            6.68deg,
+            #00730c 4.95%,
+            rgba(251, 246, 238, 0) 264.79%
+          );
+          border-radius: 5px;
+          border: none;
+          color: white;
+          padding: 10px 0;
+        }
+      }
+    }
+    .wcs-feedback__block {
+      position: absolute;
+      background-color: #e6f5ea;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 585px;
+      margin-bottom: 40px;
+      .wcs-text__block {
+        padding: 50px 0 372px 0;
+        margin: 0 15px;
+        margin-bottom: 250px;
+        h2 {
+          text-align: center;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 38px;
+          margin-bottom: 15px;
+          span {
+            color: #00730c;
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: center;
+        }
+      }
+      .wcs-feedback__message {
+        position: absolute;
+        background-color: white;
+        width: calc(100% - 30px);
+        margin-left: 15px;
+        height: 490px;
+        top: 300px;
+        overflow: hidden;
+        padding: 20px;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        img {
+          width: 135px;
+          height: 183px;
+          margin-bottom: 40px;
+        }
+        .wcs-feedback__text {
+          background: url(img/66.svg);
+          background-size: 30px 23px;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            margin-bottom: 15px;
+          }
+          .wcs-feedback__stars {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .wcs-stars {
+              display: flex;
+              li {
+                width: 20px;
+                height: 20px;
+                background: url(img/star.svg);
+              }
+            }
+          }
+        }
+      }
+      .faq-block {
+        position: relative;
+        text-align: center;
+        margin: 0 15px 50px 15px;
+        h2 {
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 38px;
+          margin-bottom: 15px;
+          span {
+            color: #00730c;
+          }
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px;
+        }
+        .faq-dropdown__list {
+          margin-top: 40px;
+          .faq-dropdown__listitem {
+            .dropbtn {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              padding: 12px 10px;
+              background: #fff8f1;
+              border-radius: 3px;
+              border: none;
+              color: color;
+              text-align: center;
+              font-size: 14px;
+              font-weight: 600;
+              line-height: 20px;
+              margin-bottom: 20px;
+              span {
+                width: 30px;
+                height: 30px;
+                background-image: url(img/plus.svg);
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+              }
+            }
+            .dropbtn:hover {
+              background-color: #00730c;
+              color: white;
+              font-weight: 600;
+              span {
+                width: 30px;
+                height: 30px;
+                background-image: url(img/minus.svg);
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+              }
+            }
+            .dropdown-info {
+              p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                text-align: left;
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+      }
+      .oia-block {
+        margin: 0 15px;
+        h2 {
+          text-align: center;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 38px;
+          margin-bottom: 20px;
+          span {
+            color: #00730c;
+          }
+        }
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        .oia-expert__tips {
+          padding: 30px 20px;
+          background-image: url(img/oia-leaf.svg);
+          background-size: 120px 120px;
+          background-position: 100% 0;
+          background-repeat: no-repeat;
+          border-radius: 5px;
+          box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+          margin-bottom: 50px;
+          button {
+            background: #d9f1e0;
+            box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+            border: none;
+            padding: 0 26px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #00730c;
+            margin-bottom: 40px;
+          }
+          h3 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: #00730c;
+            text-align: left;
+            margin-bottom: 15px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #676767;
+            text-align: justify;
+            margin-bottom: 30px;
+          }
+          .oia-expert__subtitle {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            h4 {
+              color: #676767;
+            }
+            p {
+              display: flex;
+              justify-content: space-between;
+              gap: 10px;
+              span {
+                width: 20px;
+                height: 20px;
+                background: url(img/Admin.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+              }
+            }
+          }
+        }
+        .oia-logo__flex {
+          position: absolute;
+          height: 70px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 100px 0 140px 0;
+          right: 30px;
+          left: 30px;
+          .oia-morris {
+            width: 100%;
+            height: 100%;
+            background: url(img/morris.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: grayscale(100%);
+          }
+          .oia-forest {
+            width: 100%;
+            height: 100%;
+            background: url(img/forest.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            filter: grayscale(100%);
+          }
+        }
+      }
+      .solution-fyg__block {
+        position: absolute;
+        background: #d9f1e0;
+        border-radius: 5px;
+        margin: 200px 15px 0 15px;
+        height: 180px;
+        text-align: center;
+        z-index: 5;
+        right: 0;
+        left: 0;
+        h2 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          padding: 30px 50px 15px 50px;
+          margin: 0;
+        }
+        button {
+          background: #00730c;
+          color: white;
+          padding: 10px 30px;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 20px;
+          text-transform: capitalize;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      .footer {
+        position: absolute;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0c4b35;
+        margin-top: 300px;
+        padding-top: 125px;
+        color: white;
+        .stn-block {
+          padding: 0 15px;
+          h2 {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: capitalize;
+            text-align: left;
+          }
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: left;
+          }
+          .stn-subscribe {
+            margin-bottom: 15px;
+            input {
+              position: relative;
+              outline: none;
+              border: none;
+              background-color: transparent;
+            }
+            input::placeholder {
+              color: white;
+            }
+            button {
+              position: absolute;
+              right: 20px;
+              background-color: transparent;
+              border: none;
+              color: white;
+              font-size: 22px;
+              font-weight: 700;
+              line-height: 30px;
+            }
+            hr {
+              margin: 0;
+            }
+            .stn-social__icons {
+              width: 60%;
+              display: flex;
+              justify-content: space-between;
+              margin: 15px 0 40px 0;
+              li {
+                width: 30px;
+                height: 30px;
+                background-color: red;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+              .stn-facebook {
+                background: url(img/facebook.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+              }
+              .stn-twitter {
+                background: url(img/twitter.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+              }
+              .stn-google {
+                background: url(img/google.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+              }
+              .stn-linkedin {
+                background: url(img/linkedin.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+              }
+            }
+            .stn-social__icons {
+              width: 60%;
+              display: flex;
+              justify-content: space-between;
+              margin: 15px 0 40px 0;
+              li:hover {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+              .stn-facebook:hover {
+                background: url(img/facebook-hover.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+                background-color: white;
+              }
+              .stn-twitter:hover {
+                background: url(img/twitter-hover.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+                background-color: white;
+              }
+              .stn-google:hover {
+                background: url(img/google-hover.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+                background-color: white;
+              }
+              .stn-linkedin:hover {
+                background: url(img/linkedin-hover.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px 20px;
+                background-color: white;
+              }
+            }
+          }
+        }
+        .contacts-footer__block{
+          margin: 0 15px 40px 15px;
+          p{
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 15px;
+            text-align: left;
+          }
+          ul{
+            li{
+              margin-bottom: 10px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+              }
+            }
+            .tel-flex__block{
+              display: flex;
+            }
+          }
+        }
+        .useful-links__block{
+          width: 100%;
+          background-color: #0C4B35;
+          padding: 0 15px 0 15px;
+          padding-bottom: 40px;
+          p {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 15px;
+            text-align: left;
+          }
+          .useful-links__flex{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            ul{
+              li{
+                a{
+                  text-decoration: none;
+                  color: white;
+                  font-size: 14px;
+                  line-height: 22px;
+                  font-weight: 400;
+                }
+              }
+            }
+          }
+        }
+        .popular-services{
+          width: 100%;
+          background-color: #0C4B35;
+          padding: 0 15px 40px 15px;
+          p {
+            text-align: left;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 25px;
+            margin-bottom: 15px;
+          }
+          ul{
+            li{
+              margin-bottom: 10px;
+              a {
+                text-decoration: none;
+                color: white;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+              }
+            }
+          }
+        }
+        hr{
+          margin: 0;
+        }
+        .footer-bottom{
+          background-color:#0C4B35;
+          padding: 15px 45px 40px 45px;
+          p{
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            li{
+              width: 100%;
+              text-align: center;
+              a{
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Desktop screen============================================
+
+//Desktop screen============================================
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: calc(100vw - 20%);
+  }
+  .header-top__bar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 20px;
+    .header-nav__connection {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 15px;
+      }
+      p {
+        padding-left: 10px;
+        margin-right: 30px;
+        width: 100%;
+        font-size: 12px;
+        color: white;
+      }
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    .header-select__lang {
+      display: flex;
+    }
+    .header-select__lang select {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: white;
+      option {
+        background-color: #0c4b35;
+        color: white;
+      }
+    }
+  }
+  .nav-menu__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+    background-color: transparent;
+    .main-img {
+      margin: 15px 5% 0 0;
+    }
+    .nav-list__items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 60%;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        li {
+          display: flex;
+          justify-content: space-around;
+          a {
+            color: black;
+            text-decoration: none;
+          }
+          a:hover {
+            color: #00730c;
+          }
+        }
+      }
+    }
+    .menu-nav__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 50px;
+      .call-us__btn {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        border-radius: 15px;
+        border: none;
+        background-color: #00730c;
+        padding: 0 25px;
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+      .menu-burger__btn {
+        display: none;
+        border: none;
+        background-color: transparent;
+        padding-top: 10px;
+        img {
+          width: 35px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .main {
+    .services-we__provide {
+      background-color: white;
+      .SWP-head__block {
+        padding-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        h1 {
+          font-size: 28px;
+        }
+        span {
+          color: #00730c;
+        }
+      }
+      .services-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2);
+        li {
+          margin-right: 30px;
+          margin-bottom: 20px;
+          box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+          border-radius: 10px;
+          // 1 block TREE PLANTING
+          .tree-planting {
+            padding: 25px;
+            .tree-planting__img {
+              background: url(img/tree-planting.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .tree-planting:hover {
+            .tree-planting__img {
+              background: url(img/tree-planting-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .tree-planting__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          // 2 block GRASS CUTTING
+          .grass-cutting {
+            padding: 25px;
+            .grass-cutting__img {
+              background: url(img/grass-cutting.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .grass-cutting:hover {
+            .grass-cutting__img {
+              background: url(img/grass-cutting-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .grass-cutting__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          //3 block GARDEN DESIGN
+          .garden-design {
+            padding: 25px;
+            .garden-design__img {
+              background: url(img/Garden-Design.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .garden-design:hover {
+            .garden-design__img {
+              background: url(img/Garden-Design-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .garden-design__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          //4 block PLANT GROWING
+          .plant-growing {
+            padding: 25px;
+            .plant-growing__img {
+              background: url(img/Plant-Growing.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .plant-growing:hover {
+            .plant-growing__img {
+              background: url(img/Plant-Growing-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .plant-growing__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          //5 block FLOWER SCAPING
+          .flower-scaping {
+            padding: 25px;
+            .flower-scaping__img {
+              background: url(img/Flower-scaping.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .flower-scaping:hover {
+            .flower-scaping__img {
+              background: url(img/Flower-scaping-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .flower-scaping__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          //6 block BRANCH CUTTING
+          .branch-cutting {
+            padding: 25px;
+            .branch-cutting__img {
+              background: url(img/branch-cutting.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .branch-cutting:hover {
+            .branch-cutting__img {
+              background: url(img/branch-cutting-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .branch-cutting__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          //7 block WEED CONTROL
+          .weed-control {
+            padding: 25px;
+            .weed-control__img {
+              background: url(img/pests-weed-controls.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .weed-control:hover {
+            .weed-control__img {
+              background: url(img/pests-weed-controls-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .weed-control__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+          //8 block WATERING IRRIGATION
+          .watering-irrigation {
+            padding: 25px;
+            .watering-irrigation__img {
+              background: url(img/watering-irrigation.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+              img {
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+              }
+            }
+          }
+          .watering-irrigation:hover {
+            .watering-irrigation__img {
+              background: url(img/watering-irrigation-white.svg);
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+          .watering-irrigation__text {
+            padding: 20px;
+            text-align: center;
+            h4 {
+              margin-bottom: 10px;
+            }
+          }
+        }
+        li:hover {
+          background-color: #00730c;
+          color: white;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+    .yoe-main__block {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      height: 900px;
+      .yoe-palm__img {
+        position: absolute;
+        width: 232px;
+        height: 349px;
+        left: -55px;
+      }
+      .yoe-img__block {
+        position: relative;
+        max-height: 900px;
+        .yoe-green-bg__img {
+          position: absolute;
+          height: auto;
+        }
+        .medshot-manlook__plant {
+          position: absolute;
+          left: 25px;
+          margin-top: 50px;
+        }
+        .closeuphands-holdhouse__plant {
+          position: absolute;
+          left: 250px;
+          bottom: 0;
+        }
+      }
+      .yoe-text__block {
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        .yoe-text__title {
+          margin-bottom: 50px;
+          h1 {
+            font-size: 45px;
+            font-weight: 800;
+            span {
+              color: #00730c;
+            }
+          }
+          p {
+            font-family: Poppins, serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+          }
+        }
+        .yoe-proofs__flex {
+          span {
+            font-size: 24px;
+            font-weight: 700;
+          }
+          .yoe-proofs__row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            .yoe-our__mission {
+              width: 330px;
+              height: 100px;
+              background: url(img/our-mission.svg);
+              background-position: left;
+              background-repeat: no-repeat;
+              background-size: contain;
+              text-align: right;
+              line-height: 100px;
+            }
+            .yoe-our__vision {
+              width: 330px;
+              height: 100px;
+              background: url(img/our-vision.svg);
+              background-position: left;
+              background-repeat: no-repeat;
+              background-size: contain;
+              text-align: right;
+              line-height: 100px;
+            }
+          }
+          .yoe-proofs__row {
+            display: flex;
+            gap: 100px;
+            margin-bottom: 50px;
+            padding-right: 30px;
+            .yoe-support__team {
+              width: 330px;
+              height: 100px;
+              background: url(img/support-team.svg);
+              background-position: left;
+              background-repeat: no-repeat;
+              background-size: contain;
+              text-align: right;
+              line-height: 100px;
+            }
+            .yoe-clients__trust {
+              width: 330px;
+              height: 100px;
+              background: url(img/clients-trust.svg);
+              background-position: left;
+              background-repeat: no-repeat;
+              background-size: contain;
+              text-align: right;
+              line-height: 100px;
+            }
+          }
+        }
+        button {
+          width: 190px;
+          height: 50px;
+          background: #00730c;
+          border-radius: 5px;
+          color: white;
+          border: none;
+          padding: 13px 35px;
+        }
+      }
+    }
+    .why_choose-us {
+      width: 100%;
+      height: 655px;
+      background-color: #0c4b35;
+      position: relative;
+      color: white;
+      margin-bottom: 100px;
+      overflow: hidden;
+      .wcu-leaf__left {
+        width: 535px;
+        height: 535px;
+        position: absolute;
+        left: -265px;
+        bottom: -75px;
+        background: url(img/leaf_shadow_left.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .wcu-leaf__right {
+        position: absolute;
+        right: -350px;
+        top: -125px;
+        width: 600px;
+        height: 600px;
+        background: url(img/leaf_shadow_right.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .wcu-main__block {
+        display: flex;
+        width: 1410px;
+        height: 455px;
+        margin: 100px auto;
+        .wcu-text__block {
+          margin-top: 29px;
+          margin-right: 83px;
+          h2 {
+            font-size: 45px;
+            margin-bottom: 30px;
+            font-weight: 700;
+            line-height: 61px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 50px;
+          }
+          .wcu-reasons {
+            display: flex;
+            justify-content: space-between;
+            span {
+              width: 210px;
+              text-align: left;
+              font-weight: 700;
+              font-size: 24px;
+            }
+            .wcu-row {
+              .proper-take__care {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 270px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                margin-bottom: 20px;
+                .ptc-tick {
+                  background: url(img/Tick.svg);
+                  background-size: auto;
+                  padding: 10px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+              .expert-farmer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                width: 270px;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                .ptc-tick {
+                  background: url(img/Tick.svg);
+                  background-size: auto;
+                  padding: 10px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+            }
+            .wcu-row {
+              display: flex;
+              flex-direction: column;
+              .clean-working {
+                width: 270px;
+                display: flex;
+                justify-content: space-between;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                margin-bottom: 20px;
+                .ptc-tick {
+                  display: inline-block;
+                  background: url(img/Tick.svg);
+                  background-size: auto;
+                  padding: 10px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+              .home-gardening {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                width: 270px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: left;
+                .ptc-tick {
+                  background: url(img/Tick.svg);
+                  background-size: auto;
+                  padding: 10px;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background-color: white;
+                }
+              }
+            }
+          }
+          button {
+            width: 190px;
+            height: 50px;
+            background: #00730c;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            padding: 13px 35px;
+            margin-top: 50px;
+          }
+        }
+        .wcu-img__block img {
+          width: 672px;
+          height: 426px;
+          padding-top: 29px;
+        }
+      }
+    }
+    .staff-process__block {
+      .working-process__block {
+        .wp-text__block {
+          width: 1136px;
+          text-align: center;
+          margin: 0 auto;
+          margin-bottom: 50px;
+          h2 {
+            font-weight: 800;
+            font-size: 45px;
+            line-height: 62px;
+            margin-bottom: 20px;
+            span {
+              color: #00730c;
+            }
+          }
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        .wp-cards__block {
+          margin-bottom: 100px;
+          .wp-card__flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            .wp-card__consultation {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/Consultation.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33%;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;
+              }
+            }
+            .wp-card__designwork {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/DesignWork.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33px;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: left;
+              }
+            }
+            .wp-card__maintenance {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/Maintenance.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33%;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;
+              }
+            }
+
+            .wp-card__complete {
+              position: relative;
+              padding: 50px 30px;
+              width: 330px;
+              height: 408px;
+              box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.15);
+              border-radius: 10px;
+              .wp-bg__img {
+                position: absolute;
+                width: 110px;
+                height: 160px;
+                right: 35px;
+                top: 110px;
+                background-image: url(img/wp-bg.svg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+              }
+              span {
+                width: 70px;
+                height: 70px;
+                background-image: url(img/Complete.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+              .wp-top__row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                margin-bottom: 40px;
+                p {
+                  font-family: Nunito, sans-serif;
+                  font-weight: 800;
+                  font-size: 78px;
+                  line-height: 106px;
+                  color: #e3e3e3;
+                }
+              }
+              h3 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 33%;
+                margin-bottom: 20px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 30px;
+                text-align: justify;
+              }
+            }
+            .wp-card__consultation:hover {
+              cursor: pointer;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/Consultation-hover.png);
+              }
+              .wp-top__row {
+                p {
+                  color: white;
+                }
+              }
+              h3,
+              p {
+                color: white;
+              }
+            }
+            .wp-card__designwork:hover {
+              cursor: pointer;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/DesignWork-hover.png);
+              }
+              .wp-top__row {
+                p {
+                  color: white;
+                }
+              }
+              h3,
+              p {
+                color: white;
+              }
+            }
+            .wp-card__maintenance:hover {
+              cursor: pointer;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/Maintenance-hover.png);
+              }
+              .wp-top__row {
+                p {
+                  color: white;
+                }
+              }
+              h3,
+              p {
+                color: white;
+              }
+            }
+            .wp-card__complete:hover {
+              cursor: pointer;
+              .wp-bg__img {
+                background-image: url(img/wp-bg-hover.svg);
+              }
+              background-color: #00730c;
+              span {
+                background-image: url(img/Complete-hover.png);
+              }
+              .wp-top__row {
+                p {
+                  color: white;
+                }
+              }
+              h3,
+              p {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+    .main-section__PLS {
+      position: relative;
+      background-image: url(img/main/BG.jpg);
+      margin-top: 85px;
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-bottom: 120px;
+      padding-top: 50px;
+      .flower-pot {
+        max-width: 197px;
+        max-height: 278px;
+        img {
+          width: 10%;
+          position: absolute;
+          bottom: 10%;
+          left: -10px;
+          display: flex;
+          margin: auto 0 0 0;
+        }
+      }
+      .woman-with__pots {
+        .mobileWoman-holdPots__block {
+          img {
+            display: none;
+          }
+        }
+        .deskWoman-holdPots__block {
+          max-width: 1013px;
+          max-height: 673px;
+          img {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            top: 20%;
+          }
+        }
+      }
+      .main-PLS__textblock {
+        width: 35%;
+        height: 100%;
+        padding-top: 10%;
+        .main-PLS__title {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+          p {
+            font-size: 16px;
+            font-family: Nunito, sans-serif;
+            line-height: 20px;
+            font-weight: 700;
+          }
+        }
+        .main-PLS__subtitle {
+          margin-bottom: 20px;
+          p {
+            font-family: Nunito, sans-serif;
+            font-size: 58px;
+            font-weight: 800;
+            line-height: 80px;
+            span {
+              color: #00730c;
+            }
+          }
+        }
+        .main-PLS__description {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 30px;
+          color: #676767;
+          margin-bottom: 50px;
+        }
+        .main-PLS__btn {
+          display: flex;
+          align-items: center;
+          margin-bottom: 60px;
+          .get-quate__btn {
+            width: 175px;
+            height: 50px;
+            color: white;
+            background-color: #00730c;
+            border: none;
+            border-radius: 5px;
+            margin-right: 30px;
+          }
+          .how-it__works {
+            background: url(img/main/arrow-right.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            text-decoration: none;
+            span {
+              padding-right: 30px;
+              color: #676767;
+            }
+            img {
+              display: none;
+            }
+          }
+        }
+        .stat-bubbles__flex {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          .bubble {
+            display: flex;
+            width: 150px;
+            margin-right: 10px;
+            text-align: center;
+            color: #212529;
+            span {
+              width: 50px;
+              height: 50px;
+              background: linear-gradient(
+                72.71deg,
+                #00730c -83.5%,
+                #f9f9f9 93.84%
+              );
+              padding: 13px 7px;
+              border-radius: 35px;
+            }
+            p {
+              font-family: Nunito, sans-serif;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 20px;
+              width: 90px;
+              padding: 5px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
